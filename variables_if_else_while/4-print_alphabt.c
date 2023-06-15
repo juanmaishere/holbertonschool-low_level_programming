@@ -8,12 +8,16 @@
 int main(void)
 {
 	char c;
-		for (c = 'a'; c <= 'z'; ++c)
+
+	for (c = 'a'; c <= 'z'; ++c)
+{
+	if (c != 'e')
+	{
+	if (c != 'o')
 		{
-			if (c != 'e')
-			{
-				putchar(c);
-			}
+		putchar(c);
 		}
+	}
+}
 return (0);
 }
