@@ -1,12 +1,11 @@
 #include "main.h"
 /**
-* main - check the code
-* print_alphabet_x10(void) - writes the character c to stdout
-*
-* Return: On success 1.
-* On error, -1 is returned, and errno is set appropriately.
-*/
-int main(void)
+ *print_alphabet_x10 - prints 10 times the alphabet
+ *
+ *Description: Prints 10 times
+ *Return: Always 0.
+ */
+void print_alphabet_x10(void)
 {
 	char an;
 	int lov;
@@ -18,5 +17,5 @@ for (lov = 0; lov <= 10; lov++)
 		_putchar(an);
 	}
 }
-return (0);
+return;
 }
