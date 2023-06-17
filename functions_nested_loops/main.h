@@ -14,9 +14,4 @@ void print_alphabet(void);
  *with each iteration separated by a newline character.
  */
 void print_alphabet_x10(void);
-int main(void)
-{
-	print_alphabet_x10();
-return (0);
-}
 #endif
