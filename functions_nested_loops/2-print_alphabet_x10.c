@@ -18,5 +18,5 @@ for (lov = 0; lov <= 10; lov++)
 		_putchar(an);
 	}
 }
-
+return (0);
 }
