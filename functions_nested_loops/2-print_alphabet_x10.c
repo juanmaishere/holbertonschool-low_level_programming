@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	char an;
 	int lov;
 
-for (lov = 0; lov <= 10; lov++)
+for (lov = 0; lov < 10; lov++)
 {
 	for (an = 'a'; an <= 'z'; an++)
 	{
