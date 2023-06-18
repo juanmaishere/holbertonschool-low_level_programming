@@ -14,4 +14,10 @@ void print_alphabet(void);
  *with each iteration separated by a newline character.
  */
 void print_alphabet_x10(void);
+ /**
+  *    _islower - Function that checks for lowercases
+  *    This function finds the lowercase in the alphabet
+  */
+int _islower(int c);
+
 #endif
