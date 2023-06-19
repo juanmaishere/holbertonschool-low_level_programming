@@ -1,23 +1,13 @@
-#include "main.h"
-#include <ctype.h>
-/**
-*int _islower(int c) - Checks for lowercasesi
-*
-*Return: 0
-*On error, 1 is returned, and error is set appropriately.
-*
-*/
+#include <stdio.h>
+
 int _islower(int c)
 {
-c = 'c';
-
-if (_islower(c))
-	{
-	_putchar(c);
-	}
-	else
-		{
-		return (1);
-		}
+if (c >= 'a' && c <= 'z')
+{
+return (1);
+}
+else
+{
 return (0);
+}
 }
