@@ -7,13 +7,13 @@
 *On error, 1 is returned, and error is set appropriately.
 *
 */
-int main(void)
+int _islower(int c)
 {
-char pep = 'c';
+c = 'c';
 
-if (islower(pep))
+if (_islower(c))
 	{
-	_putchar(pep);
+	_putchar(c);
 	}
 	else
 		{

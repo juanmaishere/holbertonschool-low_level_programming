@@ -19,5 +19,4 @@ void print_alphabet_x10(void);
   *    This function finds the lowercase in the alphabet
   */
 int _islower(int c);
-
 #endif
