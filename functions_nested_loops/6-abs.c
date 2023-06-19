@@ -5,7 +5,7 @@
 *Description: returns absolut value
 *Return: Absolut valuei.
 */
-int 
+int
 _abs(int n)
 {
 
