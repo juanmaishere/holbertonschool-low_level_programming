@@ -17,7 +17,7 @@ if (n > 0)
 		}
 	putchar('\\');
 	putchar('\n');
-	}	
+	}
 }
 else
 {
