@@ -10,7 +10,7 @@ print_line(int n)
 	do {
 	_putchar('_');
 		b++;
-	} while (b <= n);
+	} while (b < n);
 	_putchar('\n');
 	}
 	else
