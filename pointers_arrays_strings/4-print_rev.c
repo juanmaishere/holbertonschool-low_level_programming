@@ -14,5 +14,6 @@ while (largo >= 0)
 	_putchar(s[largo]);
 	largo--;
 }
+	_putchar('\n');
 }
 
