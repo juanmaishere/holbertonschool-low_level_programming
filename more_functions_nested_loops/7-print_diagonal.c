@@ -17,6 +17,10 @@ if (n > 0)
 		}
 	putchar('\\');
 	putchar('\n');
-	}
+	}	
+}
+else
+{
+	_putchar('\n');
 }
 }
