@@ -9,11 +9,12 @@ while (s[largo] != '\0')
 {
 	largo++;
 }
-while (largo >= 0)
+while (largo != 0)
 {
 	_putchar(s[largo]);
 	largo--;
 }
+	_putchar('\n');
 	_putchar('\n');
 }
 
