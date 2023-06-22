@@ -3,7 +3,7 @@
 void
 puts_half(char *str)
 {
-int i, l, p, n;
+int i, l, p;
 
 	l = 0;
 
