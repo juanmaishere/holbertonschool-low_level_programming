@@ -3,7 +3,7 @@
 void
 puts_half(char *str)
 {
-int i, l, p;
+int i, l, p, n;
 
 	l = 0;
 
@@ -24,9 +24,10 @@ int i, l, p;
 	}
 	else
 	{
+	n = (l - 1 / 2);
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i >= l / 2)
+		if (i >= n + 1)
 		{
 			_putchar(str[i]);
 		}
