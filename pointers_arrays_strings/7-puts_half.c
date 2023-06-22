@@ -24,7 +24,7 @@ int i, l, p;
 	}
 	else
 	{
-	n = (l - 1 / 2);
+
 
 		for (i = 0; str[i] != '\0'; i++)
 	{
