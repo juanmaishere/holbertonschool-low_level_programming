@@ -26,7 +26,7 @@ int i, l, p;
 	{
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i >= (l - 1) / 2)
+		if (i >= l / 2)
 		{
 			_putchar(str[i]);
 		}
