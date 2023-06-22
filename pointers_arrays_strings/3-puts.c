@@ -10,6 +10,6 @@ if (*str != '\0')
 		str++;
 }	while (*str != '\0');
 
-	_putchar('\n');
 }
+_putchar('\n');
 }
