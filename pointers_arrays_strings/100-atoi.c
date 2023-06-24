@@ -5,7 +5,8 @@ _atoi(char *s)
 {
 int r;
 int si = 1;
-int rel, pel, nb;
+int rel = 0;
+int nb = 0;
 
 for (r = 0; s[r] != '\0'; r++)
 {
@@ -14,13 +15,13 @@ for (r = 0; s[r] != '\0'; r++)
 		rel = (s[r] * 10);
 	}
 
-	if (s[r] == 45)
+	else if (s[r] == '-')
 	{
 		si *= -1;
 	}
 
-	pel = rel + (s[r++] - '0');
-	nb = pel * si;
+	nb = (rel * si);
+	break;
 }
 
 
