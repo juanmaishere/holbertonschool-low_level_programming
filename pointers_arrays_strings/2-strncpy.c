@@ -3,21 +3,15 @@
 char
 *_strncpy(char *dest, char *src, int n)
 {
-	char *word = dest;
+	char *start = dest;
 
-	while (*word != '\0')
+	while (*src && n--)
 	{
-
-	word++;
+	*dest = *src;
+	dest++;
+	src++;
 	}
-/* word recorre la string de *dest y ahora igualamos a src, añado la string*/
-		while (*src != '\0' && n > 0)
-		{
-		*word = *src;
-		src++;
-		word++;
-		n--;
-		}
-	*word = '\0';
-return (dest);
+	*dest = '\0';
+
+return (start);
 }
