@@ -5,13 +5,19 @@ char
 {
 	char *start = dest;
 
-	while (*src && n--)
+	while (*src && n > 0)
 	{
 	*dest = *src;
 	dest++;
 	src++;
+	n--;
 	}
-	*dest = '\0';
 
+	while (n > 0)
+	{
+	*dest = '\0';
+	dest++;
+	n--;
+	}
 return (start);
 }
