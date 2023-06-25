@@ -5,7 +5,7 @@ char
 {
 	int i;
 	char *r = z;
-	int p = 0;
+	int p = 1;
 
 	for (i = 0; z[i] != '\0'; i++)
 	{
