@@ -2,17 +2,15 @@
 
 char
 *_memcpy(char *dest, char *src, unsigned int n)
-{
+{	char block;
+	block = n;
 
 	while (n > 0)
 	{
-	if (*src != src[6] && *src != src[7])
-		{
-		*dest = *src;
-		}
+	*dest = *src;
 	n--;
 	dest++;
 	src++;
 	}
-return (dest);
+return (dest - block);
 }
