@@ -10,4 +10,4 @@ char
 	n--;
 	}
 	return (s);
-
+}
