@@ -2,8 +2,8 @@
 
 char
 *_memcpy(char *dest, char *src, unsigned int n)
-{	char block;
-	block = n;
+{
+	char *ori = dest;
 
 	while (n > 0)
 	{
@@ -12,5 +12,5 @@ char
 	dest++;
 	src++;
 	}
-return (dest - block);
+return (ori);
 }
