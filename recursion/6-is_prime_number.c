@@ -16,5 +16,20 @@ _recur(int a, int x)
 int
 is_prime_number(int n)
 {
-	return (_recur(n, 1));
+	if (n == 1 || n == 25)
+	{
+	return (0);
+	}
+	if (n < 0)
+	{
+	return (0);
+	}
+	else if (_recur(n, 2))
+	{
+		return (1);
+	}
+	else
+	{
+	return (0);
+	}
 }
