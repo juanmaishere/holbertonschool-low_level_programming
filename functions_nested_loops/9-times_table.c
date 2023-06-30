@@ -18,13 +18,17 @@ int pep, reg, reg2;
 			reg2 = pep % 10;
 			_putchar(reg + '0');
 			_putchar(reg2 + '0');
+			_putchar(',');
+			_putchar(' ');
 			}
 		else
 		{
+		_putchar(',');
 		_putchar(' ');
 		_putchar(pep + '0');
 		}
-		if (b < 9)
+
+		if ((b > 9) && (pep >= 10))
 		{
 		_putchar(',');
 		_putchar(' ');
