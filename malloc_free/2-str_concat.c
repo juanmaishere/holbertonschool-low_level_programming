@@ -7,7 +7,6 @@ char
 *str_concat(char *s1, char *s2)
 {
 	char *nt;
-	int i;
 
 	if (s1 == (NULL) || s2 == (NULL))
 	{
@@ -16,10 +15,15 @@ char
 
 	nt = malloc(strlen(s1) + strlen(s2) + 1);
 
-	for (i = 0; s1[i] != '\0')
+	if (nt == NULL)
 	{
-	strcat(s1, s2);
+	return (NULL);
 	}
+
+	strcat(nt, s1);
+	strcat(nt, s2);
+
+	return (nt);
 }
 
 
