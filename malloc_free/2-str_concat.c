@@ -9,8 +9,30 @@ char
 	char *nt;
 
 	if (s1 == (NULL) || s2 == (NULL))
+		{
+		return (NULL);
+		}
+
+	if (s1 == (NULL))
+		{
+		nt = malloc(strlen(s2) + 1);
+		if (nt == NULL)
+		{
+		return (NULL);
+		}
+		strcpy(nt, s2);
+		return (nt);
+		}
+
+	if (s2 == (NULL))
 	{
-	return (NULL);
+	nt = malloc(strlen(s1) + 1);
+	if (nt == (NULL))
+		{
+		return (NULL);
+		}
+	strcpy(nt, s2);
+	return (nt);
 	}
 
 	nt = malloc(strlen(s1) + strlen(s2) + 1);
