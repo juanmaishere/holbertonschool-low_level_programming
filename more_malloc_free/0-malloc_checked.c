@@ -9,7 +9,7 @@ void
 char *nt;
 
 
-nt = malloc(sizeof(unsigned int) * b);
+nt = malloc(sizeof(int) * b);
 if (nt == (NULL))
 {
 exit(98);
