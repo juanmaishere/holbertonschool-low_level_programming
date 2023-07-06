@@ -27,7 +27,6 @@ char
 	j++;
 	}
 	al[c + n] = '\0';
-	free(al);
 
 	return (al);
 
