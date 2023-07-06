@@ -14,7 +14,7 @@ void
 	{
 	return (NULL);
 	}
-	ml = malloc(sizeof(int) * nmemb);
+	ml = malloc(size * nmemb);
 	if (ml == NULL)
 	{
 	return (NULL);
