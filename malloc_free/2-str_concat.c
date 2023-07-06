@@ -8,10 +8,6 @@ char
 {
 	char *nt;
 
-	if (s1 == (NULL) || s2 == (NULL))
-		{
-		return (NULL);
-		}
 
 	if (s1 == (NULL))
 		{
@@ -20,7 +16,7 @@ char
 		{
 		return (NULL);
 		}
-		strcpy(nt, s2);
+		strcat(nt, s2);
 		return (nt);
 		}
 
@@ -31,7 +27,7 @@ char
 		{
 		return (NULL);
 		}
-	strcpy(nt, s2);
+	strcat(nt, s2);
 	return (nt);
 	}
 
