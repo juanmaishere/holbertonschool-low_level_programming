@@ -11,6 +11,7 @@ char
 	unsigned int i, c;
 	int j = 0;
 
+
 	al = malloc(strlen(s1) + n + 1);
 
 	if (al == NULL)
@@ -28,6 +29,6 @@ char
 
 
 	return (al);
-
+free(al);
 
 }
