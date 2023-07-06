@@ -16,21 +16,22 @@ char
 		{
 		return (NULL);
 		}
-		strcat(nt, s2);
+		strcpy(nt, s2);
 		return (nt);
 		}
 
-	if (s2 == (NULL))
+	else if (s2 == (NULL))
 	{
 	nt = malloc(strlen(s1) + 1);
 	if (nt == (NULL))
 		{
 		return (NULL);
 		}
-	strcat(nt, s2);
+	strcpy(nt, s1);
 	return (nt);
 	}
-
+	else
+	{
 	nt = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (nt == NULL)
@@ -42,6 +43,7 @@ char
 	strcat(nt, s2);
 
 	return (nt);
+	}
 }
 
 
