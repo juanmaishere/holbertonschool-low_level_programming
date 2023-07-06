@@ -7,14 +7,14 @@ void
 {
 
 
-	int *ml;
+	char *ml;
 	unsigned int i;
 
 	if (nmemb <= 0 || size <= 0)
 	{
 	return (NULL);
 	}
-	ml = malloc(size * nmemb);
+	ml = malloc(sizeof(int) * nmemb);
 	if (ml == NULL)
 	{
 	return (NULL);
@@ -25,5 +25,4 @@ void
 	ml[i] = 0;
 	}
 return (ml);
-
 }
