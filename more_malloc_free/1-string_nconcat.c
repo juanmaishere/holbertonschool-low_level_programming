@@ -26,9 +26,9 @@ char
 	al[c + i] = s2[j];
 	j++;
 	}
-
+	al[c + n] = '\0';
+	free(al);
 
 	return (al);
-free(al);
 
 }
