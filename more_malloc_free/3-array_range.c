@@ -9,7 +9,7 @@ int
 	int *nt;
 	int c;
 
-	nt = malloc(sizeof(int) * (max - min));
+	nt = malloc(sizeof(int) * (max - min + 1));
 
 	if (nt == NULL)
 	{
