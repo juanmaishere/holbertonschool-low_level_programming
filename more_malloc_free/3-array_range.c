@@ -9,6 +9,11 @@ int
 	int *nt;
 	int c;
 
+	if (min > max)
+	{
+	return (NULL);
+	}
+
 	nt = malloc(sizeof(int) * (max - min + 1));
 
 	if (nt == NULL)
