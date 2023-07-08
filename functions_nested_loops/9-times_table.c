@@ -7,12 +7,13 @@ int a = 0;
 int b;
 int pep, reg, reg2;
 
-	for (a = 0; a <= 9; a++)
+	for (a = 0; a <= 10; a++)
 		{
-		for (b = 0; b <	10; b++)
+		for (b = 0; b <= 10; b++)
 		{
 		pep = b * a;
-		if (pep >= 10)
+
+			if (pep >= 10)
 			{
 			reg = pep / 10;
 			reg2 = pep % 10;
@@ -21,19 +22,15 @@ int pep, reg, reg2;
 			_putchar(',');
 			_putchar(' ');
 			}
-		else
-		{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(pep + '0');
-		}
+			else
+			{
+			_putchar(',');
+			_putchar(' ');
+			_putchar(pep + '0');
+			}
 
-		if ((b > 9) && (pep >= 10))
-		{
-		_putchar(',');
-		_putchar(' ');
-		}
-		}
+		
+	}
 		_putchar('\n');
-}
+	}
 }
