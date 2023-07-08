@@ -3,9 +3,5 @@
 int
 add(int c, int x)
 {
-	int k;
-
-	k = c + x;
-
-	return (k);
+	return (c + x);
 }
