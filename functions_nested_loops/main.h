@@ -1,5 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
+int add(int, int);
 int _putchar(char c);
 /**
  *print_alphabet - Prints the lowercase alphabet.
