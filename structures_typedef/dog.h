@@ -1,16 +1,17 @@
 #include <stdio.h>
 #ifndef dog_h
+#define dog_h
 /**
 struct my_struct - Short description
  *@name: First member
  *@age: Second member
  *@owner: Third member
  *
- *Description: doggo structure
+ * Description: doggo structure
  */
 struct dog
 {
-	char* name;
+	char *name;
 	/**
 	 *	 * @name: This is longer description of C
 	 *		 *
@@ -24,7 +25,7 @@ struct dog
 	 *			 * Description: You can use paragraphs to describe arguments
 	 *				 * using this method.
 	 *					 */
-	char* owner;
+	char *owner;
 	/**
 	 *	 * @owner: This is longer description of C
 	 *		 *
