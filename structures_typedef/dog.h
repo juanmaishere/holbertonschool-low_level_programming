@@ -11,27 +11,14 @@
 struct dog
 {
 	char *name;
-	/**
-	 *	 * @name: This is longer description of C
-	 *		 *
-	 *			 * Description: You can use paragraphs to describe arguments
-	 *				 * using this method.
-	 */
 	float age;
-	/**
-	 *	 * @age: This is longer description of C
-	 *		 *
-	 *			 * Description: You can use paragraphs to describe arguments
-	 *				 * using this method.
-	 */
 	char *owner;
-	/**
-	 *	 * @owner: This is longer description of C
-	 *		 *
-	 *			 * Description: You can use paragraphs to describe arguments
-	 *				 * using this method.
-	 */
-} dog;
+};
+
+typedef struct dog dog_t;
+
+
+
 void print_dog(struct dog *d);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
