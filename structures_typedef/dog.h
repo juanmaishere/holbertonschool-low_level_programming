@@ -32,4 +32,7 @@ struct dog
 	 *				 * using this method.
 	 */
 } dog;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
