@@ -16,10 +16,21 @@ main(int argc, char *argv[])
 		exit(98);
 		}
 
-
 	num1 = atoi(argv[1]);
 	operador = argv[2];
 	num2 = atoi(argv[3]);
+
+	if (*operador == '/' && num2 <= 0)
+	{
+	printf("Error\n");
+	exit(100);
+	}
+	if (argv[2] != operador)
+	{
+	printf("Error\n");
+	exit(99);
+	}
+
 
 	result = get_op_func(operador)(num1, num2);
 	printf("%d", result);
