@@ -20,7 +20,7 @@ main(int argc, char *argv[])
 	operador = argv[2];
 	num2 = atoi(argv[3]);
 
-	if (*operador == '/' && num2 <= 0)
+	if ((*operador == '/' || *operador == '%') && num2 <= 0)
 	{
 	printf("Error\n");
 	exit(100);
