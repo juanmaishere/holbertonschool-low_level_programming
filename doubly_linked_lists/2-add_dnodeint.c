@@ -13,8 +13,11 @@ dlistint_t
 	}
 
 	node3->n = n;
-
 	node3->next = *head;
+	if (*head != NULL)
+	{
+	(*head)->prev = node3;
+	}
 	*head = node3;
 	node3->prev = NULL;
 
