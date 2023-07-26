@@ -15,7 +15,7 @@ dlistint_t
 
 	tmp = *h;
 	nodo1->n = n;
-	while (i < idx)
+	while (i < idx - 1)
 	{
 	tmp = tmp->next;
 	i++;
