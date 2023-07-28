@@ -8,6 +8,11 @@ dlistint_t
 	dlistint_t *tmp;
 	dlistint_t *tmp2;
 
+	if (idx == 0)
+	{
+	return (add_dnodeint(h, n));
+	}
+
 	nodo1 = malloc(sizeof(dlistint_t));
 
 	if (nodo1 == NULL)
