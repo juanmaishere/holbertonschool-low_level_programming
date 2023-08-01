@@ -32,13 +32,11 @@ int main(int argc, char *argv[])
 	fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
 	}
-	close(fd2);
-	close(fd);
 	if (close(fd) == -1)
 	{
 	exit(100); }
 	if (close(fd2) == -1)
 	{
 	exit(100); }
-return (writen);
+return (0);
 }
