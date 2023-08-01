@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-	printf("Usage: cp file_from file_to\n");
+	fprintf(stderr, "Usage: cp file_from file_to\n");
 	exit(97);
 	}
 
@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
 	bytes = read(fd, buffer, BUFFER_SIZE);
 	if (bytes == -1)
 	{
-	printf("Error: Can't read from file %s\n", argv[1]);
+	fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
 	exit(98);
 	}
 	writen = write(fd2, buffer, bytes);
 	if (writen == -1)
 	{
-	printf("Error: Can't write to %s\n", argv[2]);
+	fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
 	}
 	close(fd2);
