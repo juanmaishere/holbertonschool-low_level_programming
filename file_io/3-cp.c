@@ -12,24 +12,23 @@ main(int argc, char *argv[])
 	exit(97);
 	}
 	fd = open(argv[1], O_RDONLY);
+
+	if (fd == -1)
+	{
+	printf("Error: Can't read from file %s\n", argv[1]);
+	exit(98); }
+
 	fd2 = open(argv[2], O_WRONLY);
 	bytes = read(fd, buffer, BUFFER_SIZE);
 	if (fd2 == -1)
 	{
-	fd2 = open(argv[2], O_WRONLY | O_CREAT);
+	fd2 = open(argv[2], O_WRONLY | O_CREAT, 0644);
 	chmod(argv[2], 0644);
 	}
 	else
 	{
 	fd2 = open(argv[2], O_WRONLY | O_TRUNC);
 	}
-	if (fd == -1)
-	{
-	printf("Error: Can't read from file %s\n", argv[1]);
-	close(fd);
-	close(fd2);
-	exit(98); }
-
 	writen = write(fd2, buffer, bytes);
 
 	if (writen == -1)
@@ -41,12 +40,12 @@ main(int argc, char *argv[])
 
 	if (close(fd) == -1)
 	{
-	fprintf(stderr, "Error: Can't close fd\n");
+	fprintf(stderr, "Error: Can't close %i\n", fd);
 	exit(100);
 	}
 	if (close(fd2) == -1)
 	{
-	fprintf(stderr, "Error: Can't close fd\n");
+	fprintf(stderr, "Error: Can't close %i\n", fd2);
 	exit(100);
 	}
 close(fd);
