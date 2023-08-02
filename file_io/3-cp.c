@@ -31,7 +31,7 @@ main(int argc, char *argv[])
 	}
 	writen = write(fd2, buffer, bytes);
 
-	if (writen == -1)
+	if (writen == -1 || writen != bytes)
 	{
 	fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
 	close(fd);
