@@ -22,8 +22,8 @@ main(int argc, char *argv[])
 	bytes = read(fd, buffer, BUFFER_SIZE);
 	if (fd2 == -1)
 	{
-	fd2 = open(argv[2], O_WRONLY | O_CREAT, 0644);
-	chmod(argv[2], 0644);
+	fd2 = open(argv[2], O_WRONLY | O_CREAT, 0664);
+	chmod(argv[2], 0664);
 	}
 	else
 	{
@@ -40,12 +40,12 @@ main(int argc, char *argv[])
 
 	if (close(fd) == -1)
 	{
-	fprintf(stderr, "Error: Can't close %i\n", fd);
+	fprintf(stderr, "Error: Can't close fd %i\n", fd);
 	exit(100);
 	}
 	if (close(fd2) == -1)
 	{
-	fprintf(stderr, "Error: Can't close %i\n", fd2);
+	fprintf(stderr, "Error: Can't close fd %i\n", fd2);
 	exit(100);
 	}
 close(fd);
