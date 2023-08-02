@@ -28,5 +28,5 @@ create_file(const char *filename, char *text_content)
 	chmod(filename, 0600);
 	close(d);
 	}
-return (0);
+return (1);
 }
