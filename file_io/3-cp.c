@@ -1,5 +1,5 @@
 #include "main.h"
-#define BUFFER_SIZE 1024
+#define BUFFER_SIZE 10024
 int
 main(int argc, char *argv[])
 {	int writen, fd = 0, fd2 = 0;
@@ -39,13 +39,11 @@ main(int argc, char *argv[])
 	close(fd2);
 	exit(99); }
 
-	if (close(fd) == -1)
+	if (close(fd) == -1 || close(fd2) == -1)
 	{
-	exit(100); }
-	if (close(fd2) == -1)
-	{
-	exit(100); }
-
+	fprintf(stderr, "Error: Can't close fd\n");
+	exit(100);
+	}
 close(fd);
 close(fd2);
 return (0);
