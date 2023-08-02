@@ -1,9 +1,9 @@
 #include "main.h"
-#define BUFFER_SIZE 10024
+#define BUFFER_SIZE 14000
 int
 main(int argc, char *argv[])
 {	int writen, fd = 0, fd2 = 0;
-	char bytes;
+	ssize_t bytes;
 	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
@@ -25,7 +25,7 @@ main(int argc, char *argv[])
 	}
 	if (fd == -1)
 	{
-	fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
+	printf("Error: Can't read from file %s\n", argv[1]);
 	close(fd);
 	close(fd2);
 	exit(98); }
@@ -39,7 +39,12 @@ main(int argc, char *argv[])
 	close(fd2);
 	exit(99); }
 
-	if (close(fd) == -1 || close(fd2) == -1)
+	if (close(fd) == -1)
+	{
+	fprintf(stderr, "Error: Can't close fd\n");
+	exit(100);
+	}
+	if (close(fd2) == -1)
 	{
 	fprintf(stderr, "Error: Can't close fd\n");
 	exit(100);
