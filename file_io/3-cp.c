@@ -16,12 +16,12 @@ main(int argc, char *argv[])
 	bytes = read(fd, buffer, BUFFER_SIZE);
 	if (fd2 == -1)
 	{
-	open(argv[2], O_WRONLY | O_CREAT, 0644);
-	chmod(argv[2], 644);
+	fd2 = open(argv[2], O_WRONLY | O_CREAT);
+	chmod(argv[2], 0644);
 	}
 	else
 	{
-	open(argv[2], O_WRONLY | O_TRUNC);
+	fd2 = open(argv[2], O_WRONLY | O_TRUNC);
 	}
 	if (fd == -1)
 	{
