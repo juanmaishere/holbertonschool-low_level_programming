@@ -13,14 +13,11 @@ printf("{");
 while (i < ht->size)
 {
 node = ht->array[i];
-	while (node != NULL)
+	while (node->next != NULL)
 	{
 	printf("'%s': '%s'", node->key, node->value);
-		if (node->next != NULL)
-		{
-		printf(", ");
-		}
-		node = node->next;
+	printf(", ");
+	node = node->next;
 	}
 i++;
 }
