@@ -19,8 +19,8 @@ node = ht->array[i];
 		if (node->next != NULL)
 		{
 		printf(", ");
-		node = node->next;
 		}
+		node = node->next;
 	}
 i++;
 }
