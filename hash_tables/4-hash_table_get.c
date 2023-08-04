@@ -23,6 +23,6 @@ char
 		}
 		else
 		{
-		return (move->key);
+		return (move->value);
 		}
 }
