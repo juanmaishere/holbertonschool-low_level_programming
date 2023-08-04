@@ -17,7 +17,10 @@ hash_table_print(const hash_table_t *ht)
 	{
 	printf("'%s': '%s'", node->key, node->value);
 	node = node->next;
-	if (node != NULL && i < ht->size - 1)
+	if (node == NULL)
+	{
+	}
+	else
 	{
 	printf(", ");
 	}
