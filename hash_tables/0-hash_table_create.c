@@ -10,7 +10,7 @@ hash_table_t
 	if (hash == NULL)
 		return (NULL);
 
-	hash->array = malloc(size * sizeof(hash_node_t));
+	hash->array = malloc(size * sizeof(hash_node_t *));
 	if (hash->array == NULL)
 	{
 		free(hash);
