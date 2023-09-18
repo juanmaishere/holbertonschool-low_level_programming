@@ -23,7 +23,7 @@ printf("\n");
 
 if (array[mid] == value)
 {
-return mid;
+return (mid);
 }
 else if (array[mid] < value)
 {
@@ -36,5 +36,5 @@ right = mid - 1;
 }
 }
 
-return -1;
+return (-1);
 }
