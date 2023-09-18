@@ -6,6 +6,11 @@ size_t i, left = 0;
 size_t right = size - 1;
 size_t mid;
 
+if (array == NULL)
+{
+return (-1);
+}
+
 while (left <= right)
 {
 mid = left + (right - left) / 2;
