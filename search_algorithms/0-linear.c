@@ -10,11 +10,11 @@ return (-1);
 }
 for (i = 0; i < size; i++)
 {
-    printf("Value checked array[%li] = [%d]\n", i, array[i]);
-    if (array[i] == value)
-    {
-    return (i);
-    }
+printf("Value checked array[%li] = [%d]\n", i, array[i]);
+if (array[i] == value)
+{
+return (i);
+}
 }
 
 return (-1);
